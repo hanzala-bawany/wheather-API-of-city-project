@@ -11,10 +11,30 @@ body{
     justify-content: center;
     align-items: center;
     row-gap: 40px;
+    background-color: gray;
 }
+#mainH{
+font-size: 30px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
 #inputContainer{
     display: flex;
     column-gap: 20px;
+}
+
+#inputContainer input,button{
+    padding: 2px 6px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px 1px 3px 3px solid;
+}
+
+#inputContainer button:hover{
+    border:2px solid;
+    background-color: black;
+    color: white;
 }
 
 #resultContainer{
@@ -24,6 +44,53 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0px 10px;
+    padding: 0px 14px;
+    font-size: 18px;
     /* margin: auto; */
+    background-color: beige;
+    border-radius: 10px;
+}
+
+#resultContainer span{
+    color: red;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:450px){
+    #inputContainer{
+        display: flex;
+        column-gap: 15px;
+    }
+    
+    #inputContainer input,button{
+        padding: 2px 5px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px 1px 3px 3px solid;
+    }
+    
+    #inputContainer button{
+        font-size: 14px;
+    }
+
+    #resultContainer{
+        border: 2px solid;
+        width: 60vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px 14px;
+        font-size: 15px;
+        /* margin: auto; */
+        background-color: beige;
+        border-radius: 10px;
+    }
+
+    #mainH{
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+        }
+       
 }
